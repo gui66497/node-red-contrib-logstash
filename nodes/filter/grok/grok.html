@@ -1,12 +1,14 @@
-
+<script src="../../vendor/select2/js/select2.min.js"></script>
+<link rel="stylesheet" href="../../vendor/select2/css/select2.min.css">
 <script type="text/x-red" data-template-name="ls-flt-grok">
     <div class='form-row'>
-        <label for='node-input-ls_add_field'>Add field</label>
-        <input type='text' id='node-input-ls_add_field' placeholder='{}'>
+        <label for='node-input-ls_match'>解析规则</label>
+        <select id='grok-match-select' multiple="multiple" name="state">
+        </select>
     </div>
     <div class='form-row'>
-        <label for='node-input-ls_add_tag'>Add tag</label>
-        <input type='text' id='node-input-ls_add_tag' placeholder='[]'>
+        <label for='node-input-ls_match'>Match</label>
+        <input type='text' id='node-input-ls_match' placeholder='{}'>
     </div>
     <div class='form-row'>
         <label for='node-input-ls_break_on_match'>Break on match</label>
@@ -16,28 +18,35 @@
         </select>
     </div>
     <div class='form-row'>
+        <label for='node-input-ls_add_field'>Add field</label>
+        <input type='text' id='node-input-ls_add_field' placeholder='{}'>
+    </div>
+    <!--<div class='form-row'>
+        <label for='node-input-ls_add_tag'>Add tag</label>
+        <input type='text' id='node-input-ls_add_tag' placeholder='[]'>
+    </div>-->
+
+    <!--<div class='form-row'>
         <label for='node-input-ls_keep_empty_captures'>Keep empty captures</label>
         <select id='node-input-ls_keep_empty_captures'>
             <option value='true'>true</option>
             <option value='false'>false</option>
         </select>
-    </div>
-    <div class='form-row'>
-        <label for='node-input-ls_match'>Match</label>
-        <input type='text' id='node-input-ls_match' placeholder='{}'>
-    </div>
-    <div class='form-row'>
+    </div>-->
+
+
+    <!--<div class='form-row'>
         <label for='node-input-ls_named_captures_only'>Named captures only</label>
         <select id='node-input-ls_named_captures_only'>
             <option value='true'>true</option>
             <option value='false'>false</option>
         </select>
-    </div>
+    </div>-->
     <div class='form-row'>
         <label for='node-input-ls_overwrite'>Overwrite</label>
         <input type='text' id='node-input-ls_overwrite' placeholder='[]'>
     </div>
-    <div class='form-row'>
+    <!--<div class='form-row'>
         <label for='node-input-ls_pattern_definitions'>Pattern definitions</label>
         <input type='text' id='node-input-ls_pattern_definitions' placeholder='{}'>
     </div>
@@ -75,7 +84,7 @@
     <div class='form-row'>
         <label for='node-input-ls_timeout_millis'>Timeout millis</label>
         <input type='number' id='node-input-ls_timeout_millis' placeholder='30000'>
-    </div>
+    </div>-->
 
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-file"></i> Name</label>
